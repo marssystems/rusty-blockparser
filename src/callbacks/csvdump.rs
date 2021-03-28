@@ -64,3 +64,4 @@ impl EvaluatedTxOut {
             &self.script.address)
      }
  }
+	}
