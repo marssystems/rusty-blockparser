@@ -22,6 +22,8 @@ impl Callback for CsvDump {
                  txin_writer:    try!(CsvDump::create_writer(cap, dump_folder.join("tx_in.csv.tmp"))),
                  txout_writer:   try!(CsvDump::create_writer(cap, dump_folder.join("tx_out.csv.tmp"))),
                  start_height: 0, end_height: 0, tx_count: 0, in_count: 0, out_count: 0
+	}
+	 }	
 impl Callback for CsvDump {
  
      fn on_block(&mut self, block: Block, block_height: usize) {
